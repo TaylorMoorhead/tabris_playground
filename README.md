@@ -33,13 +33,22 @@ You can try out snippets, that have been modified to work on the playground.
 1. Refresh your device by swiping to left, and press the **refresh** icons
 
 
+### Showing your Mobile App to the world.
+If you've done something cool in the Tabris playground, you can show it to employers, friends and family by:
+1. Ask them to install the Tabris 2 app from any store - just search for it
+1. THE QRCODE
+1. ???
+
+
+
+
+
 ### Have fun trying it out.
 
 - To start developing a real Tabris.js app, follow the Quick Start Guide:  https://tabrisjs.com/tabris-js-docs/latest/getting-started.html
 
 
 ---
-
 
 
 ##### License

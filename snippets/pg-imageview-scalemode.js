@@ -2,7 +2,7 @@ const {ImageView, Picker, TextView, app, Button, ui} = require('tabris');
 
 const MARGIN = 16;
 const MARGIN_LARGE = 32;
-const GITHUB_URL = 'https://github.com/eclipsesource/tabris-js/blob/master/snippets/imageview-scalemode.js';
+const GITHUB_URL = 'https://github.com/mrmccormack/tabris_playground/blob/master/snippets/pg-imageview-scalemode.js';
 
 // you must have a Tabris account, and change this to your playground URL
 const MY_TABRIS_PLAYGROUND_URL = 'https://tabrisjs.com/mrmccormack/playground/';
@@ -56,7 +56,7 @@ new Button({
 }).appendTo(ui.contentView);
 
 new Button({
-  alignment: 'center', centerX: 0,  top: 450, image:'https://cdn3.iconfinder.com/data/icons/free-social-icons/67/github_circle_black-48.png',
+  alignment: 'center', centerX: 0,  top: 'prev() 10', image:'https://cdn3.iconfinder.com/data/icons/free-social-icons/67/github_circle_black-48.png',
   text: 'Edit on Tabris.js playground'
 }).on({
   select: () => app.launch(MY_TABRIS_PLAYGROUND_URL)
