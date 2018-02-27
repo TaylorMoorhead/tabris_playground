@@ -1,5 +1,7 @@
 const {Tab, TabFolder, TextView, ui} = require('tabris');
 
+const IMAGE_PATH = 'https://raw.githubusercontent.com/eclipsesource/tabris-js/master/snippets/resources/';
+
 // Create a swipe enabled tab folder with 3 tabs
 
 let tabFolder = new TabFolder({
@@ -7,9 +9,9 @@ let tabFolder = new TabFolder({
   paging: true // enables swiping. To still be able to open the developer console in iOS, swipe from the bottom right.
 }).appendTo(ui.contentView);
 
-createTab('Cart', 'resources/cart.png', 'resources/cart-filled.png');
-createTab('Pay', 'resources/card.png', 'resources/card-filled.png');
-createTab('Statistic', 'resources/chart.png', 'resources/chart-filled.png');
+createTab('Cart', IMAGE_PATH + 'cart.png', IMAGE_PATH + 'cart-filled.png');
+createTab('Pay', IMAGE_PATH + 'card.png', IMAGE_PATH + 'card-filled.png');
+createTab('Statistic', IMAGE_PATH +  'chart.png', IMAGE_PATH + 'chart-filled.png');
 
 tabFolder.on('selectionChanged', ({value: tab}) => console.log(tab.title));
 
@@ -24,3 +26,4 @@ function createTab(title, image, seletedImage) {
     text: 'Content of Tab ' + title
   }).appendTo(tab);
 }
+
